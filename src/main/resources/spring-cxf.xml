@@ -32,8 +32,4 @@
             <ref bean="loginbound"/>
         </cxf:inInterceptors>
     </cxf:bus>
-       <!--配置客户端-->
-    <jaxws:client  id="cxfClient" address="http://localhost:8088/springcxf/ws/getWeather"  serviceClass="cn.zhangpeng.springcxf.WeatherService">
-
-    </jaxws:client>
 </beans>

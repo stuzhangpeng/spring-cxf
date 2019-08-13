@@ -1,5 +1,9 @@
 cn\itzhangpeng\springcxf\webappconfig\RootContainerConfig.class
+cn\itzhangpeng\springcxf\service\UserInterface.class
 cn\itzhangpeng\springcxf\serviceimpl\HelloWrold.class
-cn\itzhangpeng\springcxf\service\WeatherService.class
 cn\itzhangpeng\springcxf\webappconfig\MyWebAppInitializer.class
+cn\itzhangpeng\springcxf\server\RestServer.class
+cn\itzhangpeng\springcxf\serviceimpl\UserInterfaceImpl.class
+cn\itzhangpeng\springcxf\service\WeatherService.class
+cn\itzhangpeng\springcxf\entity\User.class
 cn\itzhangpeng\springcxf\serviceimpl\WeatherServiceImpl.class

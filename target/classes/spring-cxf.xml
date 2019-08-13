@@ -18,10 +18,12 @@
         </jaxws:server>
     <bean id="loginbound" class="org.apache.cxf.interceptor.LoggingInInterceptor"/>
     <bean id="loginoutbound" class="org.apache.cxf.interceptor.LoggingOutInterceptor"/>
-    <!--总线配置-->
     <!--使用endpoint方式发布服务-->
     <jaxws:endpoint address="/hello" implementor="cn.itzhangpeng.springcxf.serviceimpl.HelloWrold">
+        <!--使用spring管理的类，id为springbean的id或name-->
+    <!--<jaxws:endpoint address="/hello" implementor="#id">-->
     </jaxws:endpoint>
+    <!--总线配置，为所有的service服务配置interceptor-->
     <cxf:bus>
         <cxf:outInterceptors>
             <ref bean="loginoutbound"/>
